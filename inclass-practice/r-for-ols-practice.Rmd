@@ -55,7 +55,8 @@ data("Journals")
 
 ```{r ch2-summary, results='hide'}
 
-
+mutate(Journals,citeprice=price/citations) -> journals
+summary(journals)
 ```
 
 # 因果問句
